@@ -10,4 +10,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.sendall(b'Hello, World!')
     data = s.recv(1024)
 
-print(f"Received {data!r}")
+print(f"Received {data!r}")  # Could we also use {data.decode('utf-8') here?
